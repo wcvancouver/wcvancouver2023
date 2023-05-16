@@ -1,0 +1,96 @@
+body {
+    font-size: 14px;
+    overflow-wrap : break-word;
+    &:not(.home) {
+        .site {
+            width: 100%;
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 250px;
+            @media screen and (min-width: 48em) {
+                background: none;
+            }
+        }
+    }
+}
+
+.edit-link {
+    display: none !important;
+}
+
+.cf {
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+.block-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .block-area-inner {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    @media screen and (min-width: 48em) {
+        .block-area-half {
+            width: calc((100% - 3em) / 2);
+         }
+    }
+}
+
+.comment-body {
+    margin-left: 0;
+    .comment-author {
+        display: none;
+    }
+    .reply {
+        padding-left: 2em;
+    }
+}
+
+// simplified grid
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        min-width: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+        @media screen and (min-width: 48em) {
+            min-width: 50%;
+        }
+        &:first-child {
+            padding-right: 0;
+            @media screen and (min-width: 48em) {
+                padding-right: 16px;
+            }
+        }
+        &:last-child {
+            padding-left: 0;
+            @media screen and (min-width: 48em) {
+                padding-leftt: 16px;
+            }
+        }
+    }
+}
+
+
+/* Spacing if logged in */
+.admin-bar .site-header .navigation-top {
+    top: 32px;
+}
+@media screen and (min-width: 48em) {
+    .site-content {
+        padding: 5.5em 0 0;
+    }
+    .page:not(.home) {
+        .admin-bar .site-content {
+            padding: calc(5.5em + 32px) 0 0 0;
+        }
+    }
+}
+

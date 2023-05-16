@@ -1,0 +1,194 @@
+@import "utilities";
+
+@mixin headerStyle() {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 120px;
+    padding: 0 !important;
+    margin: 0 0 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-transform: none;
+    @media screen and (min-width: 48em) {
+        margin: 2em 0 4em;
+    }
+}
+
+@mixin headerTitleStyle() {
+    position: relative;
+    font-size: 1.25rem !important;
+    text-transform: none;
+    &:before,
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 3em;
+        height: 2px;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+    }
+    &:before {
+        left: -3.5em;
+    }
+    &:after {
+        right: -3.5em;
+    }
+}
+
+body:not(.home) {
+    .site-header {
+        @media screen and (min-width: 48em) {
+            padding-top: 70px;
+        }
+    }
+
+    .single-featured-image-header {
+        //display: none;
+        border: none;
+        background-color: transparent;
+        padding-top: 3em;
+    }
+
+    .page-header {
+        @include headerStyle();
+        float: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 0 26px 0 !important;
+        min-height: auto !important;
+        flex-flow: row;
+        justify-content: start;
+        .page-title {
+            border-bottom: solid 1px #000;
+            width: 100%;
+            padding-bottom: 20px;
+            font-size: 2rem !important;
+            letter-spacing: normal;
+            text-transform: none;
+            &:before, &:after {
+                content: none !important;
+                display: none !important;
+            }
+        }
+    }
+
+    &:not(.blog):not(.single) {
+        .entry-header {
+            @include headerStyle();
+            .entry-title {
+                @include headerTitleStyle();
+            }
+        }
+    }
+
+    .custom-header {
+        display: none;
+    }
+
+    .site-content {
+        .wrap {
+            @media screen and (min-width: 48em) {
+                //max-width: 740px;
+
+            }
+            .entry-header {
+                float: none !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 0 26px 0 !important;
+                min-height: auto !important;
+                flex-flow: row;
+                justify-content: start;
+                h1 {
+                    &.entry-title {
+                        width: 100%;
+                        border-bottom: solid 1px #000;
+                        padding-bottom: 20px;
+                        font-size: 2rem !important;
+                        letter-spacing: normal;
+                        text-transform: none;
+                        text-align: left;
+                        &:before, &:after {
+                            content: none !important;
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+            .entry-content {
+                float: none !important;
+                width: 100% !important;
+                margin: 0 !important;
+                &:before, &:after {
+                    content: none;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.page-header,
+.content-area .site-main article {
+    width: 100% !important;
+    float: none !important;
+}
+
+.site-content-contain {
+    background-color: $color-white;
+}
+
+.tix-column-remaining {
+    white-space: nowrap !important;
+}
+
+/* Code of Conduct Page */
+body.page-id-19 .post-19 .entry-content ol ol,
+body.page-id-19 .post-19 .entry-content ol ul,
+body.page-id-19 .post-19 .entry-content ul ol,
+body.page-id-19 .post-19 .entry-content ul ul {
+    margin: 0 0 1em;
+}
+
+
+/* Organizers Page */
+.wcorg-organizer {
+    text-align: center;
+    width: 13.75rem;
+    margin: 1.5em 0;
+}
+.wcorg-organizers {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+/* Sponsors Page */
+.page-id-10 .wcorg-sponsors {
+    margin: 4em 0 0;
+}
+.page-id-10 .wcorg-sponsor {
+    margin: 0 auto 4em;
+}
+.page-id-10 .wcorg-sponsors h2 {
+    font-weight: bold;
+}
+
+
+// Fix mobile nav overlapping
+body:not(.home) {
+    padding-top: 50px;
+    &.admin-bar {
+        padding-top: 90px;
+    }
+}
+

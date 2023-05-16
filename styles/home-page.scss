@@ -1,0 +1,214 @@
+@import "utilities";
+
+.page-two-column {
+  .panel-content {
+    .entry-header {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: solid 1px #000;
+      width: 100% !important;
+      float: none !important;
+      @media screen and (min-width: 48em) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+      }
+      h2 {
+        text-transform: none;
+        margin: 0;
+        font-size: 1.25rem;
+        word-spacing: 0;
+        letter-spacing: .1em;
+        @media screen and (min-width: 48em) {
+          font-size: 2rem;
+        }
+      }
+    }
+    .entry-content {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+}
+
+.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
+  border-top: none;
+}
+
+#post-194 {
+  .panel-content {
+    .wrap {
+      padding-top: 8em;
+      padding-bottom: 8em;
+    }
+  }
+}
+
+#panel1 {
+  width: 100%;
+  background-color: $color-dark;
+  padding: 4em 2em 4em;
+  background-image: url("https://wcvancouver.github.io/wcvancouver2019/images/canvas_texture_dark.jpg");
+  height: auto;
+  margin-bottom: 250px;
+  overflow: visible;
+  @media screen and (min-width: 48em) {
+    height: 550px;
+  }
+  @media screen and (max-width: 48em) {
+    margin-bottom: 50px;
+  }
+  .panel-content {
+    max-width: 1000px;
+    min-height: 550px;
+    margin: 0 auto;
+    background-color: $color-white;
+    box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
+    header {
+      border-bottom: none;
+      &.entry-header {
+        border-bottom: none !important;
+      }
+      h2 {
+        color: #222222;
+        padding: 1em 16px 0;
+      }
+    }
+    .recent-posts {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      > article {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+        width: 100%;
+        padding: 16px;
+        @media screen and (min-width: 48em) {
+          min-width: 30%;
+        }
+        > header {
+          border-top: solid 1px $color-darker;
+          margin: 0;
+          padding: 0;
+          .entry-title {
+            line-height: normal;
+            a {
+              display: inline-block;
+              width: 100%;
+              padding-bottom: 16px;
+              font-size: 1rem;
+              font-weight: bold;
+              box-shadow: none;
+              color: $color-darker;
+              margin-left: 0;
+            }
+          }
+          time {
+            padding: 0;
+            font-weight: normal;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+  }
+  .panel-content {}
+}
+
+#panel2 {
+  .details-info {
+    margin-bottom: 32px;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col {
+      min-width: 50%;
+      @media screen and (min-width: 48em) {
+        width: auto;
+        min-width: 25%;
+      }
+    }
+    .btn-details-ticket {
+      display: block;
+      padding: 16px;
+      border-radius: 3px;
+      color: $color-light;
+      background-color: $color-darker;
+      background-image: url("https://wcvancouver.github.io/wcvancouver2019/images/canvas_texture_dark.jpg");
+      opacity: .8;
+      text-align: center;
+      font-size: 1.5rem;
+      &:hover {
+        text-decoration: none;
+        box-shadow: none;
+        opacity: 1;
+        color: $color-white;
+      }
+    }
+  }
+  .googlemaps {
+    width: 100%;
+    iframe {
+      width: 100% !important;
+    }
+  }
+}
+
+#panel3 {
+  div[class^="wcorg-sponsor-level-"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 35px;
+    h4, h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $color-muted;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .wcorg-sponsor {
+      padding: 16px;
+      flex-basis: 0;
+      flex-grow: 1;
+      min-width: 190px;
+      max-width: 190px;
+      .wcorg-sponsor-description {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+        box-shadow: none;
+        //border: solid 1px $color-muted;
+      }
+    }
+    &.sponsor-gold {
+      .sponsor-col {
+        min-width: 250px;
+        max-width: 250px;
+      }
+    }
+    &.sponsor-silver {
+      .sponsor-col {
+        min-width: 190px;
+        max-width: 190px;
+      }
+    }
+    &.sponsor-bronze {
+      .sponsor-col {
+        min-width: 120px;
+        max-width: 120px;
+      }
+    }
+  }
+}
