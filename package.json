@@ -1,5 +1,5 @@
 {
-  "name": "wvvan2019",
+  "name": "wvvan2023",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "dev": "npm run lint && webpack-dev-server --config webpack.dev.config.js --inline",
     "lint": "./node_modules/.bin/eslint js"
   },
-  "author": "Wordcamp Vancouver 2019",
+  "author": "Wordcamp Vancouver 2023",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
