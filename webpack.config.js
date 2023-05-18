@@ -5,7 +5,7 @@ var extractCSS = new ExtractTextPlugin('style.css');
 
 var output = {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: 'https://wcvancouver.github.io/wcvancouver2019/dist/',
+    publicPath: 'https://wcvancouver.github.io/wcvancouver2023/dist/',
     filename: 'bundle.js'
 };
 
