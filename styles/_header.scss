@@ -41,6 +41,13 @@ html {
   @media screen and (max-width: 48em) {
     flex-flow: column;
   }
+  p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 4rem !important;
+    letter-spacing: unset !important;
+    text-transform: none !important;
+  }
   &:before {
     content: '';
     display: block;
