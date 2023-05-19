@@ -13,6 +13,13 @@ body {
             }
         }
     }
+    p {
+        text-transform: none !important;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300 !important;
+        letter-spacing: 0 !important;
+        line-height: 1.5 !important;
+    }
 }
 
 .edit-link {
