@@ -205,6 +205,11 @@
     position: relative;
     padding-top: 35px;
     h4, h2 {
+      color: black !important;
+      font-family: 'Ubuntu', sans-serif !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      font-weight: 700 !important;
       position: absolute;
       top: 0;
       left: 0;
