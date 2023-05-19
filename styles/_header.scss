@@ -37,6 +37,7 @@ html {
   display: flex !important;
   justify-content: center;
   align-items: center;
+  flex-direction: column !important;
   @media screen and (max-width: 48em) {
     flex-flow: column;
   }
