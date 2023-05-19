@@ -54,6 +54,7 @@ html {
     margin: 0 !important;
     .site-title {
       a {
+        font-family: 'Ubuntu', sans-serif;
         font-size: 1.25rem;
         @media screen and (max-width: 48em) {
           display: block;
