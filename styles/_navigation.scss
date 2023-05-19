@@ -8,6 +8,9 @@
 
 .site-header {
     .navigation-top {
+        font-family: 'Ubuntu', sans-serif !important;
+        text-transform: none !important;
+        font-weight: 700 !important;
         width: 100%;
         background-color: $color-dark;
         padding-bottom: 1em;
