@@ -163,6 +163,12 @@
         width: auto;
         min-width: 25%;
       }
+      h4 {
+        font-family: 'Ubuntu', sans-serif !important;
+        font-weight: 700 !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+      }
     }
     .btn-details-ticket {
       display: block;
