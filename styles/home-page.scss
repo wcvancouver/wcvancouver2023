@@ -9,7 +9,7 @@
       padding-bottom: 16px;
       border-bottom: solid 10px;
       border-image-slice: 1;
-      border-image-source: linear-gradient(to left, rgb(185,99,167), rgb(105,55,146), rgb(26,198,217));
+      border-image-source: linear-gradient(to left, rgb(235,0,139), rgb(46,48,146), rgb(26,198,217));
       width: 100% !important;
       float: none !important;
       @media screen and (min-width: 48em) {
@@ -180,11 +180,12 @@
     .btn-details-ticket {
       display: block;
       padding: 16px;
-      border-radius: 3px;
+      border-radius: 0px !important;
       color: $color-light;
       background-color: $color-darker;
       background-image: url("https://wcvancouver.github.io/wcvancouver2023/images/gradient_texture_dark.jpg");
       opacity: .8;
+      background-size: cover;
       text-align: center;
       font-size: 1.5rem;
       &:hover {

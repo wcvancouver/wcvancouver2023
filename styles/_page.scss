@@ -109,7 +109,7 @@ body:not(.home) {
                         width: 100%;
                         border-bottom: solid 10px;
                         border-image-slice: 1;
-                        border-image-source: to left, rgb(185,99,167), rgb(105,55,146), rgb(26,198,217);
+                        border-image-source: linear-gradient(to left, rgb(235,0,139), rgb(46,48,146), rgb(26,198,217));
                         padding-bottom: 20px;
                         font-size: 2rem !important;
                         letter-spacing: normal;
