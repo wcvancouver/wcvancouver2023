@@ -12,7 +12,7 @@
         text-transform: none !important;
         font-weight: 700 !important;
         width: 100%;
-        background-color: $color-dark;
+        background-color: #000000;
         padding-bottom: 1em;
         position: fixed;
         top: 0;
@@ -20,7 +20,7 @@
         bottom: auto;
         border: none;
         z-index: 9999;
-        // background-image: url("https://wcvancouver.github.io/wcvancouver2019/images/canvas_texture_dark.jpg");
+        // background-image: url("https://wcvancouver.github.io/wcvancouver2023/images/canvas_texture_dark.jpg");
         @media screen and (min-width: 48em) {
             padding-bottom: 0;
             .wrap {
