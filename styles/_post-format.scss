@@ -7,24 +7,29 @@ body:not(.home) {
             display: none;
         }
         h2 {
+            font-weight: 700 !important;
             font-size: 1.25rem;
             color: rgba($color-black, 1);
         }
         h3 {
+            font-weight: 700 !important;
             font-size: 1.15rem;
             color: rgba($color-black, .9);
         }
         h4 {
+            font-weight: 700 !important;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1rem;
             color: rgba($color-black, .8);
         }
         h5 {
+            font-weight: 700 !important;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1rem;
             color: rgba($color-black, .75);
         }
         h6 {
+            font-weight: 700 !important;
             font-size: .9rem;
             color: rgba($color-black, .75);
         }
