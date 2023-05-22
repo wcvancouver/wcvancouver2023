@@ -36,6 +36,11 @@ body {
         text-transform: none !important;
         letter-spacing: 0 !important;
     }
+    #subscribe-field-2 {
+        ::placeholder{
+            font-family: 'Ubuntu', sans-serif !important;
+        }
+    }
 }
 
 .edit-link {
