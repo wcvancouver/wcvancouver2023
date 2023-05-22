@@ -36,8 +36,8 @@ body {
         text-transform: none !important;
         letter-spacing: 0 !important;
     }
-    #subscribe-field-2 {
-        ::placeholder{
+    #subscribe-email {
+        input {
             font-family: 'Ubuntu', sans-serif !important;
         }
     }
