@@ -7,7 +7,9 @@
       letter-spacing: normal !important;
       margin-bottom: 16px;
       padding-bottom: 16px;
-      border-bottom: solid 1px #000;
+      border-bottom: solid 10px;
+      border-image-slice: 1;
+      border-image-source: to left, rgb(185,99,167), rgb(105,55,146), rgb(26,198,217);
       width: 100% !important;
       float: none !important;
       @media screen and (min-width: 48em) {
